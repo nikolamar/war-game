@@ -1,0 +1,315 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+  outline: none;
+}
+
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.App {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.Strech {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.Background {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+.Transition {
+  -webkit-transition: all ease-in-out 500ms;
+  -moz-transition: all ease-in-out 500ms;
+  -o-transition: all ease-in-out 500ms;
+  transition: all ease-in-out 500ms;
+}
+
+.Table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.Menu {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50vw;
+  height: 25vw;
+  -ms-transform: translate(-50%, -70%);
+  -webkit-transform: translate(-50%, -70%);
+  transform: translate(-50%, -70%);
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.PlayerWon {
+  height: 3vw;
+  margin: 1vw auto;
+  background-image: url('assets/PlayerWonOff.png');
+}
+
+.Comp1Won {
+  height: 4vw;
+  margin: 1vw auto;
+  background-image: url('assets/Comp1WonOff.png');
+}
+
+.Comp2Won {
+  height: 4vw;
+  margin: 1vw auto;
+  background-image: url('assets/Comp2WonOff.png');
+}
+
+.Comp3Won {
+  height: 4vw;
+  margin: 1vw auto;
+  background-image: url('assets/Comp3WonOff.png');
+}
+
+.NewWar {
+  height: 5vw;
+  margin: 1vw auto;
+  background-image: url('assets/NewWarOff.png');
+}
+
+.NewWar:hover {
+  cursor: pointer;
+  background-image: url('assets/NewWarOn.png');
+}
+
+.TwoPlayers {
+  height: 5vw;
+  margin: 1vw auto;
+  background-image: url('assets/TwoPlayersOff.png');
+}
+
+.TwoPlayers:hover {
+  cursor: pointer;
+  background-image: url('assets/TwoPlayersOn.png');
+}
+
+.ThreePlayers {
+  height: 5vw;
+  margin: 1vw auto;
+  background-image: url('assets/ThreePlayersOff.png');
+}
+
+.ThreePlayers:hover {
+  cursor: pointer;
+  background-image: url('assets/ThreePlayersOn.png');
+}
+
+.FourPlayers {
+  height: 5vw;
+  margin: 1vw auto;
+  background-image: url('assets/FourPlayersOff.png');
+}
+
+.FourPlayers:hover {
+  cursor: pointer;
+  background-image: url('assets/FourPlayersOn.png');
+}
+
+.Offline {
+  height: 5vw;
+  margin: 1vw auto;
+  background-image: url('assets/OfflineOff.png');
+}
+
+.Offline:hover {
+  cursor: pointer;
+  background-image: url('assets/OfflineOn.png');
+}
+
+.Online {
+  height: 5vw;
+  margin: 1vw auto;
+  background-image: url('assets/OnlineOff.png');
+}
+
+.Online:hover {
+  cursor: pointer;
+  background-image: url('assets/OnlineOn.png');
+}
+
+.About {
+  height: 5vw;
+  margin: 1vw auto;
+  background-image: url('assets/AboutOff.png');
+}
+
+.About:hover {
+  cursor: pointer;
+  background-image: url('assets/AboutOn.png');
+}
+
+.BackToMenu {
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 420%);
+  height: 7vw;
+  margin: 1vw auto;
+  background-image: url('assets/BackToMenuOff.png');
+}
+
+.BackToMenu:hover {
+  cursor: pointer;
+  background-image: url('assets/BackToMenuOn.png');
+}
+
+.Fucked {
+  height: 15vw;
+  margin: 1vw auto;
+  background-image: url('assets/FuckedOff.png');
+}
+
+.Loading {
+  height: 10vw;
+  margin: 10vw auto;
+  background-image: url('assets/LoadingOff.png');
+}
+
+/* React Transition Group */
+
+.Menu-enter {
+  opacity: 0.01;
+}
+
+.Menu-enter.Menu-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-out;
+  animation: fadeIn 500ms;
+}
+
+.Menu-leave {
+  opacity: 1;
+}
+
+.Menu-leave.Menu-leave-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+  animation: fadeOut 500ms;
+}
+
+/* React Transition Group */
+
+.Card-enter {
+  opacity: 0.01;
+}
+
+.Card-enter.Card-enter-active {
+  opacity: 1;
+  animation: fadeIn 1s;
+}
+
+.Card-leave {
+  opacity: 1;
+}
+
+.Card-leave.Card-leave-active {
+  /*opacity: 0.01;*/
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+  animation: fadeOut 500ms;
+}
+
+.Score {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5vw;
+  height: 5vw;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.Player {
+  -ms-transform: translate(-50%, 320%);
+  -webkit-transform: translate(-50%, 320%);
+  transform: translate(-50%, 320%);
+}
+
+.Comp1 {
+  -ms-transform: translate(-500%, -200%);
+  -webkit-transform: translate(-500%, -200%);
+  transform: translate(-500%, -200%);
+}
+
+.Comp2 {
+  -ms-transform: translate(-50%, -450%);
+  -webkit-transform: translate(-50%, -450%);
+  transform: translate(-50%, -450%);
+}
+
+.Comp3 {
+  -ms-transform: translate(400%, -200%);
+  -webkit-transform: translate(400%, -200%);
+  transform: translate(400%, -200%);
+}
+
+.TableField {
+  position: relative;
+  width: 45vw;
+  height: 24vw;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.PlayerField {
+  cursor: pointer;
+  position: absolute;
+  width: 12vw;
+  height: 12vw;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, 45%);
+  -webkit-transform: translate(-50%, 45%);
+  transform: translate(-50%, 45%);
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  background: white;
+  border-radius: 6vw;
+  opacity: .2;
+  filter: alpha(opacity=20);
+  -webkit-animation: opacity 3s infinite;
+  -moz-animation:    opacity 3s infinite;
+  -o-animation:      opacity 3s infinite;
+  animation:         opacity 3s infinite;
+}
+
+@keyframes opacity {
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 0; }
+}
