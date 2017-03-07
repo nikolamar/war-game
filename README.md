@@ -18,3 +18,10 @@
 - crete solution using front-end technology (JavaScript, CSS, HTML)
 - use https://deckofcardsapi.com/ for cards, using Piles API is optional
 - you can use any framework, library or plugins
+
+### Task is finished in 5 days
+
+- first day, preparing material and editing in photoshop
+- second day, creating css
+- third and, fourth day javascript
+- fifth day, playing game :)
