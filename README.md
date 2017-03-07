@@ -1,6 +1,6 @@
 # Interview task for Hooloovoo company
 
-- 2 to 4 players, only one human can play (other are controlled by machine)
+- 2 to 4 players, only one human can play (others are controlled by machine)
 - create one ordinary deck of 52 cards
 - just one hand, every players gets it 10 cards
 - human always play first
