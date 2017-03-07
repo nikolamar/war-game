@@ -6,7 +6,7 @@
 - human always play first
 - order in which they play is clockwise
 - machine randomly picks cards
-- every players puts one card on table, biggest card takes it all
+- every player puts one card on table, biggest card takes it all
 - cards value are A=1 1, 2, 3... J=12, Q=13, K=14
 - if two or more players have same card then player who played it last takes it all
 - don't return taken cards in games 
