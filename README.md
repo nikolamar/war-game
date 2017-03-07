@@ -19,7 +19,7 @@
 - use https://deckofcardsapi.com/ for cards, using Piles API is optional
 - you can use any framework, library or plugins
 
-### Task is finished in 5 days
+### Task finished in 5 days
 
 - first day, preparing material and editing in photoshop
 - second day, creating css
