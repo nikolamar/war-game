@@ -11,10 +11,10 @@
 - if two or more players have same card then player who played it last takes it all
 - don't return taken cards in game
 - game ends when players have no cards, don't deal cards that are left in deck
-- player with more cards is winner (if there are players with same top score they all wins).
+- player with more cards is winner (if there are players with same top score they all wins)
 
 ## Tehnical details:
 
 - crete solution using front-end technology (JavaScript, CSS, HTML)
 - use https://deckofcardsapi.com/ for cards, using Piles API is optional
-- you can use any framework, library or plugins.
+- you can use any framework, library or plugins
