@@ -8,8 +8,8 @@
 - machine randomly picks cards
 - every players puts one card on table, biggest card takes it all
 - cards value are A=1 1, 2, 3... J=12, Q=13, K=14
-- if two or more players have sam card then player who played last takes it all
-- cards are't returning on table
+- if two or more players have same card then player who played it last takes it all
+- don't return taken cards in games 
 - game ends when players are left without any card, don't deal cards that are left in deck
 - player with more cards is winner (if there are players with sam biggest sum they all wins).
 
