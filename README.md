@@ -13,7 +13,7 @@
 - game ends when players have no cards, don't deal cards that are left in deck
 - player with more cards is winner (if there are players with same top score they all wins)
 
-## Tehnical details:
+## Technical details:
 
 - crete solution using front-end technology (JavaScript, CSS, HTML)
 - use https://deckofcardsapi.com/ for cards, using Piles API is optional
