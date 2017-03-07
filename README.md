@@ -4,7 +4,7 @@
 - create one ordinary deck of 52 cards
 - just one hand, every players gets it 10 cards
 - human always play first
-- order is clockwise
+- order in which they play is clockwise
 - machine randomly picks cards
 - every players puts one card on table, biggest card takes it all
 - cards value are A=1 1, 2, 3... J=12, Q=13, K=14
