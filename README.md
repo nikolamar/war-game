@@ -23,5 +23,5 @@
 
 - first day, preparing material and editing in photoshop
 - second day, creating css
-- third and, fourth day javascript
+- third and fourth day, javascript
 - fifth day, playing game :)
