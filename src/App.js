@@ -35,7 +35,6 @@ class App extends Component {
         this.setState({ players });
         break;
       case 'Offline':
-        const { offline } = this.state;
         this.setState({offline: !this.state.offline});
         break;
       case 'About':
