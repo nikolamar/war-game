@@ -17,9 +17,9 @@
 
 ## Technical details:
 
-- create solution using front-end technology (JavaScript, CSS, HTML)
-- use https://deckofcardsapi.com/ for cards, using Piles API is optional
-- you can use any framework, library or plugins
+- solution is using front-end technology (JavaScript, CSS, HTML)
+- it use https://deckofcardsapi.com/ for cards
+- axios and react are used libraries in this project
 
 ## Task finished in 5 days
 
