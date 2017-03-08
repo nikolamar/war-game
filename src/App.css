@@ -193,50 +193,6 @@ img {
   background-image: url('assets/LoadingOff.png');
 }
 
-/* React Transition Group */
-
-.Menu-enter {
-  opacity: 0.01;
-}
-
-.Menu-enter.Menu-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-out;
-  animation: fadeIn 500ms;
-}
-
-.Menu-leave {
-  opacity: 1;
-}
-
-.Menu-leave.Menu-leave-active {
-  opacity: 0.01;
-  transition: opacity 500ms ease-in;
-  animation: fadeOut 500ms;
-}
-
-/* React Transition Group */
-
-.Card-enter {
-  opacity: 0.01;
-}
-
-.Card-enter.Card-enter-active {
-  opacity: 1;
-  animation: fadeIn 1s;
-}
-
-.Card-leave {
-  opacity: 1;
-}
-
-.Card-leave.Card-leave-active {
-  /*opacity: 0.01;*/
-  opacity: 0.01;
-  transition: opacity 500ms ease-in;
-  animation: fadeOut 500ms;
-}
-
 .Score {
   position: absolute;
   left: 50%;
