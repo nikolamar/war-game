@@ -1,6 +1,8 @@
 # Classical War Game with cards
 
-# <a href='https://github.com/nikolamar/war-game'><img src='https://github.com/nikolamar/war-game/raw/master/src/assets/TableFourPlayers.png' height='350'></a>
+You can look at <a href='http://atriumdigital.co.uk/games/war-game/'>demo</a>
+
+# <a href='http://atriumdigital.co.uk/games/war-game/'><img src='https://github.com/nikolamar/war-game/raw/master/src/assets/TableFourPlayers.png' height='350'></a>
 
 ## Technical details:
 
