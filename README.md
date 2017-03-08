@@ -17,7 +17,7 @@
 
 ## Technical details:
 
-- crete solution using front-end technology (JavaScript, CSS, HTML)
+- create solution using front-end technology (JavaScript, CSS, HTML)
 - use https://deckofcardsapi.com/ for cards, using Piles API is optional
 - you can use any framework, library or plugins
 
