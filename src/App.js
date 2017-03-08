@@ -149,9 +149,7 @@ class App extends Component {
   }
   getDeck = () => this.get('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1');
   getCards = (id, howMany) => this.get(`https://deckofcardsapi.com/api/deck/${id}/draw/?count=${howMany}`);
-  get = async url => await axios(url).catch(async error => {
-    this.setState({error: true, loading: false, newWar: false, about: false, congrats: false, clickable: true});
-  });
+  get = async url => await axios(url).catch(error => this.setState({error: true, loading: false, newWar: false, about: false, congrats: false, clickable: true}));
   render() {
     return (
       <div className='App'>
