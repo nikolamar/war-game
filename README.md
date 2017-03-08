@@ -1,4 +1,4 @@
-# Interview task for Hooloovoo company
+# Classical War Game with cards
 
 # <a href='https://github.com/nikolamar/war-game'><img src='https://github.com/nikolamar/war-game/raw/master/src/assets/TableFourPlayers.png' height='350'></a>
 
