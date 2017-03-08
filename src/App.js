@@ -71,7 +71,6 @@ class App extends Component {
         congrats: true,
         newWar: false
       });
-      return;
     }
   }
   iterate = async (callback, pause = 0) => {
