@@ -11,7 +11,7 @@
     "react-dom": "^15.4.2"
   },
   "author": "Nikola Marjanović <nikola.marjanovic@icloud.com>",
-  "homepage": "http://atriumdigital.co.uk/",
+  "homepage": "http://atriumdigital.co.uk/games/war-game/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
