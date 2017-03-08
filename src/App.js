@@ -53,10 +53,8 @@ class App extends Component {
     await this.iterate(i => {
       winner = winner.strength === cards[i].strength ? cards[i] : 
       winner.strength > cards[i].strength ? winner : cards[i];
-      console.log(cards[i].owner, cards[i].code)
     });
     const { owner } = winner;
-    console.info('winner: ', winner.owner)
     await this.iterate(i => this.moveCard(i, 0, 'Table', i), 500);
     await this.pause(1500);
     await this.iterate(i => this.moveCard(i, Math.ceil(Math.random() * 360), owner), 100);
@@ -152,7 +150,7 @@ class App extends Component {
   get = async url => await axios(url).catch(error => this.setState({error: true, loading: false, newWar: false, about: false, congrats: false, clickable: true}));
   render() {
     return (
-      <div className='App'>
+      <div className='Strech'>
         <Table {...this.state} />
         <Menu {...this.state} handleMenu={this.handleMenu} />
         <Cards {...this.state} />
