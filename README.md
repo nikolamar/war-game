@@ -1,5 +1,7 @@
 # Interview task for Hooloovoo company
 
+# <a href='http://redux.js.org'><img src='https://github.com/nikolamar/war-game/raw/master/src/assets/TableFourPlayers.png' height='60'></a>
+
 - 2 to 4 players, only one human can play (others are controlled by machine)
 - create one ordinary deck of 52 cards
 - just one hand, every player gets it 10 cards
