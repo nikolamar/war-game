@@ -9,7 +9,6 @@ class Image extends Component {
     loaded: false,
   }
   onImageLoad = () => {
-    console.info('image loaded');
     this.setState({loaded: true});
   }
   componentDidMount() {
@@ -20,7 +19,7 @@ class Image extends Component {
   render() {
     const { loaded } = this.state;
     return( 
-      <img ref={ref => this.ref=ref} {...this.props} className={`Transition ${loaded ? 'ImageLoaded' : null}`} />
+      <img ref={ref => this.ref=ref} {...this.props} className={`Transition ${loaded ? 'ImageLoaded' : 'ImageDefault'}`} />
     );
   }
 }
