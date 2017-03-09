@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import FaceOff from '../assets/FaceOff.png';
-import Image from './Image';
 
 class Card extends Component {
   static propTypes = {
@@ -34,7 +33,7 @@ class Card extends Component {
   render() {
     const { id, deg, faceOn, image } = this.props;
     return (
-      <Image id={id} alt={id} src={faceOn ? image : FaceOff} className='Transition' style={this.style(deg)} />
+      <img id={id} alt={id} src={faceOn ? image : FaceOff} className='Transition' style={this.style(deg)} />
     );
   }
 }

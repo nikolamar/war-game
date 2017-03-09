@@ -14,14 +14,6 @@ img {
   user-select: none;
 }
 
-.ImageDefault {
-  opacity: 0;
-}
-
-.ImageLoaded { 
-  opacity: 1; 
-}
-
 .Strech {
   position: absolute;
   width: 100%;
