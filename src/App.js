@@ -5,6 +5,7 @@ import Cards from './Views/Cards';
 import Player from './Views/Player';
 import Score from './Views/Score';
 import { allCards, allPlayers } from './lib/defaults';
+import assets from './lib/assets.json';
 import axios from 'axios';
 import './App.css';
 
@@ -14,12 +15,24 @@ class App extends Component {
     congrats: false,
     about: false,
     error: false,
-    loading: false,
+    loading: true,
     players: allPlayers(),
     handLimit: 10,
     offline: false,
     cards: [],
     clickable: true,
+  }
+  componentWillMount() {
+    assets.map(file => {
+      let img = new Image();
+      img.onload = () => this.onload(file);
+      img.src = require(`./assets/${file}`);
+    });
+  }
+  onload = file => {
+    if (assets[assets.length-1] === file) {
+      this.setState({loading: false});
+    }
   }
   handleMenu = e => {
     switch(e.target.id) {
@@ -60,7 +73,7 @@ class App extends Component {
     await this.iterate(i => this.moveCard(i, Math.ceil(Math.random() * 360), owner), 100);
     await this.pause(400);
     await this.iterate(i => this.removeCard(i));
-    players.map(p => p.name===owner ? p.score++ : null);
+    players.map(p => p.name===owner ? p.score+= players.length : null);
     this.setState({ players, clickable: true });
 
     if (this.state.cards.length <= 0) {
