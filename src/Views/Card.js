@@ -32,13 +32,8 @@ class Card extends Component {
   }
   render() {
     const { id, deg, faceOn, image } = this.props;
-    const cacheImage = !faceOn ? <img id={id} alt={id} src={FaceOff} style={this.style(deg)} className='Transition' /> : null;
-
     return (
-      <div className='Transition'>
-        <img id={id} alt={id} src={image} style={this.style(deg)} className='Transition' />
-        { cacheImage }
-      </div>
+      <img id={id} alt={id} src={faceOn ? image : FaceOff} className='Transition' style={this.style(deg)} />
     );
   }
 }
