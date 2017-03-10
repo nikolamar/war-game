@@ -36,7 +36,7 @@ class LoaderStatus extends Component {
       BorderRadius: `${this.props.height}vw`,
     }
   }
-  progress = () => ({width: `${(this.props.percent === 0 ? 0 : this.props.percent / 100) * this.props.width}vw`})
+  progress = () => ({width: `${this.props.percent === 0 ? 0 : Math.round(this.props.percent / 100 * this.props.width)}vw`})
   render() {
     return (
       <div style={this.style.container}>

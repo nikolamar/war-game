@@ -36,7 +36,9 @@ class App extends Component {
   onload = i => {
     const length = assets.length;
     const percent = (i * 100) / length;
-    this.setState({ percent });
+    if (percent >= this.state.percent) {
+      this.setState({ percent });
+    }
     if (length-1 <= i) {
       this.setState({loadingAssets: false});
     }
