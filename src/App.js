@@ -4,6 +4,7 @@ import Menu from './Views/Menu';
 import Cards from './Views/Cards';
 import Player from './Views/Player';
 import Score from './Views/Score';
+import Loader from './DevKit/Loader';
 import { allCards, allPlayers } from './lib/defaults';
 import assets from './lib/assets.json';
 import axios from 'axios';
@@ -15,7 +16,10 @@ class App extends Component {
     congrats: false,
     about: false,
     error: false,
-    loading: true,
+    init: false,
+    loading: false,
+    loadingAssets: true,
+    percent: 0,
     players: allPlayers(),
     handLimit: 10,
     offline: false,
@@ -23,15 +27,18 @@ class App extends Component {
     clickable: true,
   }
   componentWillMount() {
-    assets.map(file => {
+    assets.map((file, i) => {
       let img = new Image();
-      img.onload = () => this.onload(file);
+      img.onload = () => this.onload(i);
       img.src = require(`./assets/${file}`);
     });
   }
-  onload = file => {
-    if (assets[assets.length-1] === file) {
-      this.setState({loading: false});
+  onload = i => {
+    const length = assets.length;
+    const percent = (i * 100) / length;
+    this.setState({ percent });
+    if (length-1 <= i) {
+      this.setState({loadingAssets: false});
     }
   }
   handleMenu = e => {
@@ -161,13 +168,17 @@ class App extends Component {
   getCards = (id, howMany) => this.get(`https://deckofcardsapi.com/api/deck/${id}/draw/?count=${howMany}`);
   get = async url => await axios(url).catch(error => this.setState({error: true, loading: false, newWar: false, about: false, congrats: false, clickable: true}));
   render() {
+    const game = !this.state.loadingAssets ? <div className='Strech'>
+      <Table {...this.state} />
+      <Menu {...this.state} handleMenu={this.handleMenu} />
+      <Cards {...this.state} />
+      <Player {...this.state} handleCard={this.handleCard} />
+      <Score {...this.state} />
+    </div> : null;
     return (
       <div className='Strech'>
-        <Table {...this.state} />
-        <Menu {...this.state} handleMenu={this.handleMenu} />
-        <Cards {...this.state} />
-        <Player {...this.state} handleCard={this.handleCard} />
-        <Score {...this.state} />
+        { game }
+        <Loader show={this.state.loadingAssets} width={100} height={30} x={50} y={50} percent={this.state.percent} />
       </div>
     );
   }

@@ -4,6 +4,7 @@ body {
   background-color: black;
   overflow: hidden;
   outline: none;
+  font-family: 'Permanent Marker', cursive;
 }
 
 img {
