@@ -5,4 +5,4 @@
 See live demo <a href='http://atriumdigital.co.uk/games/war-game/'>here</a>
 
 - Written completely in React.js 
-- I used https://deckofcardsapi.com backend for cards
+- I used deckofcardsapi.com backend for cards
