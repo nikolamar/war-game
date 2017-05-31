@@ -1,6 +1,6 @@
 # Classical War Game in React.js
 
-<a href='http://atriumdigital.co.uk/games/war-game/'><img src='https://s14.postimg.org/eqpbbx5sh/screencapture-atriumdigital-co-uk-games-war-game.png' height='350'></a>
+<a href='http://atriumdigital.co.uk/games/war-game/'><img src='https://s7.postimg.org/tkjocknrv/image.png'></a>
 
 See live demo <a href='http://atriumdigital.co.uk/games/war-game/'>here</a>
 
